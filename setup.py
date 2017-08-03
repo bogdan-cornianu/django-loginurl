@@ -1,4 +1,11 @@
-from distutils.core import setup
+from __future__ import absolute_import, division, print_function
+
+try:
+    from setuptools import setup
+except ImportError:
+    from ez_setup import use_setuptools
+    use_setuptools()
+    from setuptools import setup
 
 import loginurl
 
